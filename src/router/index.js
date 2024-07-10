@@ -3,6 +3,9 @@ import Index from "../views/index.vue";
 import dedicatedServer from "../views/dedicated-server.vue";
 import dashboard from "../views/dashboard.vue";
 import Account from "../views/account.vue";
+import Overview from "../views/overview.vue";
+import Monitoring from "../views/monitoring.vue";
+
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -25,6 +28,16 @@ export const router = createRouter({
       path: "/account",
       name: "Account",
       component: Account,
+    },
+    {
+      path: "/overview",
+      name: "Overview",
+      component: Overview,
+    },
+    {
+      path: "/monitoring",
+      name: "Monitoring",
+      component: Monitoring,
     },
   ],
 });

@@ -242,6 +242,7 @@ import {
   BellIcon,
   FolderIcon,
   HomeIcon,
+  TvIcon,
   UserIcon,
   XMarkIcon,
 } from "@heroicons/vue/24/outline";
@@ -252,6 +253,11 @@ const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: HomeIcon, current: true },
   { name: "Account", href: "/account", icon: UserIcon, current: false },
   { name: "Overview", href: "/overview", icon: FolderIcon, current: false },
+  {
+    name: "Monitoring",
+    href: "/monitoring",
+    icon: TvIcon,
+  },
 ];
 
 const userNavigation = [
