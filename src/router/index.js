@@ -5,6 +5,8 @@ import dashboard from "../views/dashboard.vue";
 import Account from "../views/account.vue";
 import Overview from "../views/overview.vue";
 import Monitoring from "../views/monitoring.vue";
+import Login from "../views/login.vue";
+import register from "../views/register.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -38,6 +40,16 @@ export const router = createRouter({
       path: "/monitoring",
       name: "Monitoring",
       component: Monitoring,
+    },
+    {
+      path: "/login",
+      name: "Login",
+      component: Login,
+    },
+    {
+      path: "/register",
+      name: "Register",
+      component: register,
     },
   ],
 });
